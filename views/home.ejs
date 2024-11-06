@@ -1,7 +1,5 @@
-<% include partials/header.ejs%>
-<% include partials/main_nav.ejs%>
-    <!-- Main Content -->
-    
+<!DOCTYPE html>
+
 <head>
 
     <meta charset="UTF-8">
@@ -10,21 +8,21 @@
     <meta name = "viewport" content = "width=device-width">
     <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
     
-<h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
 
 
     <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     
             <img 
-                src = "profilepic_insta.jpg"
+                src = "Assets/images/profilepic_insta.jpg" 
                 id = "pfp-home"
                 width = "75"
                 height = "75">
 </head>
 
-<% include partials/footer.ejs%>
+<%- include('partials/header') %> <!-- Include common header/navbar -->
+
 
 <body>
      <!-- Main content will be inserted here -->
@@ -57,10 +55,18 @@
         <div id="footer">
             <h5>Site by Mason Tran</h5>
             <h5> Email: mason.tran@ontariotechu.net</h5>
-            <h5> © 2024 by Mason Tran</h5>
+           
         </div>
     </div>
     
 
     </div>
 </body>
+
+<%- include('partials/footer') %> <!-- Include common footer -->
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+    <html> 
+
+    <!--header section at top of the page-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Me</title>
+        <meta name = "viewport" content = "width=device-width">
+        <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481) and (max-width:960px)">
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480)">
+    </head>
+<%- include('partials/header') %> <!-- Include common header/navbar -->
+
+
+    <body>
+
+        <!--response feedback form for returning info to my email-->
+        <div id="wrapper">
+            <h1> Contact Me</h1>
+            <form action='mailto:mason.tran@ontariotechu.net'
+            method="post" enctype="text/plain" ?subject=Mistakes
+            name="form">
+            <p>
+                <label for="name">Name :</label>
+                <input type="text" name="name" placeholder="Your complete Name" size="32" required>
+            </p>
+    
+            <p>
+                <label for="email">Email :</label>
+                <input type="email" name="name" placeholder="Your complete Email" size="48"required>
+            </p>
+            <p>
+                <label for="comments">Comments :</label>
+                <textarea name="comments" cols="40" rows="8"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="maillist">
+                <label for="maillist">Put me on the list for subscriptions</label>
+            </p>
+            <!--selections for how did my web get found-->
+            <p>
+                <label for="where">How did you find us</label>
+                <select name="where">
+                    <option value="Search engine">Search engine</option>
+                    <option value="Social Network">Search engine</option>
+                    <option value="Reference">Search engine</option>
+                    <option value="Other">Search engine</option>
+                </select>
+            </p>
+            <p>
+                <p>
+                    <label for="country">What country are you from :</label>
+                    <textarea name="country" cols="8" rows="1"></textarea>
+                </p>
+            </p>
+            <p>
+                <input type="submit" value="Click to submit the form">
+            </p>
+            <p>
+                <input type="reset" value="Click to reset the form">
+            </p>
+            
+            </form>
+
+            <div id ="right-column-contactme">
+                
+                        
+                        <img 
+                        src = "profilepic_insta.jpg"
+                        id = "pfp-contactme"
+                        width = "100"
+                        height = "100">
+            </div>
+
+
+            
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            <h5>Site by Mason Tran</h5>
+            <h5> Email: mason.tran@ontariotechu.net</h5>
+            
+        </div>
+    </body>
+    </html>
+
+<% include partials/footer.ejs%>

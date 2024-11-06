@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+
+<!--what type of html being used-->
+
+    <html> 
+    
+
+    <head>
+        <meta charset="UTF-8">   <!--makes it possible to use characters not in normal keyboards lang.-->
+        <title>Mason Portfolio</title>
+        <meta name = "viewport" content = "width=device-width"> <!--get device width to be responsive to size-->
+        <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481) and (max-width:960px)">
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480)">
+
+     
+
+
+    </head>
+    
+    <body>
+
+        <%- include('partials/header') %> <!-- Include common header/navbar -->
+
+
+        <div id="wrapper">     <!--container element-->
+            <div id="banner">
+                <h1>About Me </h1>
+
+
+                
+           
+            </div>
+
+        <div id = "right-column"> 
+            <h3> Introduction About Myself</h3>
+            <p> Hello, my name is Mason Tran and im a student here at ontario tech</p>
+            <p> Welcome to my personal portfolio website</p>
+
+            <!--insert video muted and with a button for playing-->
+            <video id = "myVideo" width = "400" height = "320" controls muted> 
+                <source src="Untitled Video September 28, 2024 6_55 PM.mp4" type="video/mp4">
+
+            </video>
+            <br>
+                <button onclick = "playPause()">Play/Pause</button>
+                <script>
+                var myVideo=document.getElementById("myVideo");
+                function playPause()
+                {
+                    if (myVideo.paused)
+                    myVideo.play()
+                    else myVideo.pause();
+                }
+                </script>
+            </video>
+
+        </div>    
+            
+        <div id = "left-column">
+            <!--inserting profile picture and determining height and width-->
+            <img
+                src = "profilepic_insta.jpg"
+                id = "pfp"
+                width = "100"
+                height = "100">
+            <!--making links for navigating the pages using href-->
+            
+                
+
+            </div>
+            
+
+            </div>
+            <!--sets whether floating elements need to be put below it-->
+            <div class="clear"></div>
+            <!--footer section for putting website credit and email at bottom-->
+        <div id="footer">
+            <h5>Site by Mason Tran</h5>
+            <h5> Email: mason.tran@ontariotechu.net</h5>
+           
+        </div>
+    </body>
+
+    
+    </html>
+
+<% include partials/footer.ejs%>

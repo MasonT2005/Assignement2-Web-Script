@@ -1,2 +1,131 @@
 /* custom css goes here*/
 
+/* Styling*/
+
+/*defining character set for html file*/
+
+@charset "UTF-8";
+
+/*using liner gradient to have a color that fades into another*/
+body {
+    background: linear-gradient(#7F28F7,#F7285D);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    margin-left: 15px;
+}
+
+/*designing the style for the website*/
+#wrapper {
+    width: 960px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+
+/*float to let it float to the left of the container im using*/
+#right-column {
+    float: right;
+    width: 600px;
+    height: 650px;
+    background-color: beige;
+}
+
+#left-column {
+    float: left;
+    width: 360px;
+    background-color: beige;
+    height: 650px;
+}
+
+/* margin right to decide how far from side it is*/
+#footer {
+    height: 100px;
+    width: 100%;
+    margin-right: auto;
+    background-color: rgb(198, 119, 243);
+}
+
+#banner {
+    height: 120px;
+    padding: 70px;
+    background-color: rgb(198, 119, 243);
+}
+
+/* decides what should happen next to my floating element*/
+.clear {
+    clear: both;
+}
+/* my profile picture, making it a circle and cahnging the position*/
+#pfp {
+    border-radius: 50%;
+    position: relative;
+    margin-left: 5px;
+    top: 15px
+    
+}
+
+#pfp-home {
+    border-radius: 50%;
+    position: relative;
+    margin-left: 350px;
+    top: 250px
+}
+
+#links {
+    position: relative;
+    margin-left: 40px;
+    text-decoration-line: overline;
+    text-decoration-color: plum;
+
+    top: -70px;
+    
+
+}
+
+#links-projects {
+    position: relative;
+    margin-left: 800px;
+    text-decoration-line: overline;
+    text-decoration-color: plum;
+    top: -400px;
+}
+
+#right-column-contactme {
+    position: relative;
+    margin-left: 700px;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(158, 158, 158);
+
+    top: -300px;
+    
+}
+
+#pfp-contactme {
+    border-radius: 50%;
+    position: relative;
+    margin-left: 5px;
+    top: 15px
+}
+
+#pfp-projects {
+    border-radius: 50%;
+    position: relative;
+    margin-left: 825px;
+    top: -360px
+}
+
+
+
+
